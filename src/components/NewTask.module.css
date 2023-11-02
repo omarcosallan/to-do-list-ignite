@@ -1,0 +1,54 @@
+.newTask {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  margin-top: -1.75rem;
+}
+
+.newTask input {
+  flex: 1;
+
+  padding: 16px;
+
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+
+  color: var(--gray-300);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.newTask button[type="submit"] {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  border-radius: 8px;
+  background: var(--blue-dark);
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4rem;  
+  color: var(--gray-100);
+
+  cursor: pointer;
+}
+
+.newTask button[type="submit"]:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.newTask button[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .newTask input {
+    width: 85%;
+  }
+}

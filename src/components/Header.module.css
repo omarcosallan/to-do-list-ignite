@@ -1,0 +1,30 @@
+.header {
+  height: 200px;
+  background: var(--gray-700);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.header img {
+  width: 22px;
+}
+
+.header span {
+  height: 44px;
+  font-size: 40px;
+  font-weight: 900;
+
+  color: var(--blue);
+
+  > span {
+    color: var(--purple-dark);
+  }
+}
